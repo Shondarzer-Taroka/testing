@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dfgyfg</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+   .gid-container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    /* grid-template-rows:repeat(3,1fr) ; */
+    gap: 20px;
+   }
+
+   .gid-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+
+   /* .item{
+    border: 2px solid black;
+   } */
+
+   .item-1{
+    grid-column: 1/span 6;
+}
+.item-2{
+ grid-column: 7/span 6;
+}
+.item-3{
+
+ 
+    grid-column: 1/span 4;
+}
+.item-4{
+
+
+    grid-column: 5/span 5;
+}
+.item-5{
+
+
+    grid-column: 10/span 3;
+}
+.item-6{
+
+    grid-column: 1/span 5;
+}
+.item-7{
+
+
+    grid-column: 6/span 7;
+}
+
+
+.item{
+    position: relative;    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item h2{
+  position: absolute;
+      /* top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%); */
+
+
+
+    
+    color: #FFF;
+
+text-align: center;
+font-family: Mulish;
+font-size: 28px;
+font-style: normal;
+font-weight: 800;
+line-height: normal
+}
+
+
+
+   @media screen and (max-width:600px) {
+    .gid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7,1fr);
+        gap: 10px;
+    }
+
+    .gid-container img{
+        padding: 1ppx;
+        border-radius: 15px;
+    }
+
+
+.item-1{
+    grid-column: 1/-1;
+
+    grid-row: 1/2;
+}
+.item-2{
+ grid-column: 1/-1;
+
+ grid-row: 2/3;
+}
+.item-3{
+
+ 
+    grid-column: 1/-1;
+
+    grid-row: 3/4;
+}
+.item-4{
+
+
+    grid-column: 1/-1;
+
+    grid-row: 4/5;
+}
+.item-5{
+
+
+    grid-column: 1/-1;
+
+    grid-row: 5/6;
+}
+.item-6{
+
+    grid-column: 1/-1;
+
+    grid-row: 6/7;
+}
+.item-7{
+    grid-column: 1/-1;
+
+    grid-row: 7/8;
+}
+   }
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <div class="gid-container">
+        <!-- <div class="item item-1">item-1</div>
+        <div class="item item-2">item-2</div>
+        <div class="item item-3">item-3</div>
+        <div class="item item-4">item-4</div>
+        <div class="item item-5">item-5</div>
+        <div class="item item-6">item-6</div>
+        <div class="item item-7">item-7</div> -->
+
+        <div class="item item-1"><img src="./image/maldiv.png" alt="">
+         <h2>Maldives</h2>
+        </div>
+        <div class="item item-2"><img src="./image/indonesia.png" alt="">
+            <h2>Indonesia</h2>
+        </div>
+        <div class="item item-3"><img src="./image/srilanka.png" alt="">
+            <h2>Srilanka</h2>
+        </div>
+        <div class="item item-4"><img src="./image/northamerica.png" alt="">
+            <h2>North America</h2>
+        </div>
+        <div class="item item-5"><img src="./image/kashmir.png" alt="">
+        
+        <h2>  Kashmir</h2>
+        
+        </div>
+        <div class="item item-6"><img src="./image/bd.png" alt="">
+            <h2>Bangladesh</h2>
+        </div>
+        <div class="item item-7"><img src="./image/bhandarban.png" alt="">
+        <h2>Bandarban</h2>
+        </div>
+
+    </div>
+</body>
+</html>
